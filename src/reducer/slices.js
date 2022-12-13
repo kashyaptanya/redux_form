@@ -7,21 +7,19 @@ const counterSlice = createSlice({
  },
  reducers: {
    name: (state) => {
-   
      state.value = ""
-
    },
    email: (state) => {
      state.value = ""
    },
    phone: (state)=> {
-
+    state.value = ""
    }
   
  },
 })
 
-export const {  name , email , phone } = counterSlice.actions;
+export const { name , email , phone } = counterSlice.actions;
 export default counterSlice.reducer
 
 

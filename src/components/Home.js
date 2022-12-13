@@ -5,11 +5,11 @@ function Loginform  ()  {
     <form>
     <div className="form-group m-3">
     <label>Name</label>
-    <input type="text" required value={val.name} onChange={handlevalue} className="form-control" placeholder="Enter name"/>
+    <input type="text" required  className="form-control" placeholder="Enter name"/>
     </div>
     <div className="form-group m-3">
     <label>Email address</label>
-    <input type="email" required  value={val.email} onChange={handlevalue} className="form-control" placeholder="Enter email"/>
+    <input type="email" required  className="form-control" placeholder="Enter email"/>
     </div>
     <div className="form-group m-3">
     <label>Contact</label>

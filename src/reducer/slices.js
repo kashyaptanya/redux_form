@@ -1,19 +1,24 @@
 import { createSlice} from '@reduxjs/toolkit'
 const counterSlice = createSlice({
- name: 'counter',
+ name: 'users',
  initialState: {
-   value: 0,
-   loading:false
- },
+   users:[],
+  },
  reducers: {
    name: (state) => {
-     state.value = ""
+     state.users = ""
+     state.users = action.payload;
+     state.isLoading = false;
    },
    email: (state) => {
-     state.value = ""
+     state.users = ""
+     state.users = action.payload;
+     state.isLoading = false;
    },
    phone: (state)=> {
-    state.value = ""
+    state.users = ""
+    state.users = action.payload;
+    state.isLoading = false;
    }
   
  },

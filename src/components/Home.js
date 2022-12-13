@@ -1,26 +1,27 @@
-function Loginform  ()  {
+function Loginform() {
 
-    return (
-      <>
-    <form>
-    <div className="form-group m-3">
-    <label>Name</label>
-    <input type="text" required  className="form-control" placeholder="Enter name"/>
-    </div>
-    <div className="form-group m-3">
-    <label>Email address</label>
-    <input type="email" required  className="form-control" placeholder="Enter email"/>
-    </div>
-    <div className="form-group m-3">
-    <label>Contact</label>
-    <input type="tel" required   pattern="[0-9]{10}" value={val.phone} onChange={handlevalue} className="form-control" placeholder="Enter phone no."/>
-    </div>
+  return (
+    <>
+    <h1 className="text-center p-3">DASHBOARD</h1>
+      <form>
+        <div className="form-group m-3">
+          <label>Name</label>
+          <input className="form-control" />
+        </div>
+        <div className="form-group m-3">
+          <label>Email address</label>
+          <input className="form-control" />
+        </div>
+        <div className="form-group m-3">
+          <label>Contact</label>
+          <input className="form-control" />
+        </div>
 
-    </form>
-      </>
-    )
-  }
-  export default Loginform
+      </form>
+    </>
+  )
+}
+export default Loginform
 
 
 

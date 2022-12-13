@@ -20,6 +20,7 @@ function Loginform() {
 
   return (
     <>
+    <h1 className="text-center p-3">LOGIN</h1>
     <form 
     onSubmit={() => {
     navigate('/Home');

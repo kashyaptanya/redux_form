@@ -2,29 +2,25 @@ import { createSlice} from '@reduxjs/toolkit'
 const counterSlice = createSlice({
  name: 'users',
  initialState: {
-   users:[],
+   users: {},
   },
  reducers: {
-   name: (state) => {
-     state.users = ""
+   setUser: (state, action) => {
      state.users = action.payload;
-     state.isLoading = false;
-   },
-   email: (state) => {
-     state.users = ""
-     state.users = action.payload;
-     state.isLoading = false;
-   },
-   phone: (state)=> {
-    state.users = ""
-    state.users = action.payload;
-    state.isLoading = false;
-   }
-  
+
+
+    // let arr = [ ...state.users ]
+    // let index = arr.findIndex(val => val.name === action.payload.name)
+    // if(index != -1){
+    //   arr.splice(1,index)
+    //   state.users = [...arr]
+    // }else{
+    //   arr.push(action.payload)
+    //   state.users = [...arr]
+    // }
+   },  
  },
 })
 
-export const { name , email , phone } = counterSlice.actions;
+export const { setUser } = counterSlice.actions;
 export default counterSlice.reducer
-
-

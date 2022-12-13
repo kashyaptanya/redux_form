@@ -2,7 +2,21 @@ function Loginform  ()  {
 
     return (
       <>
-      HOME
+    <form>
+    <div className="form-group m-3">
+    <label>Name</label>
+    <input type="text" required value={val.name} onChange={handlevalue} className="form-control" placeholder="Enter name"/>
+    </div>
+    <div className="form-group m-3">
+    <label>Email address</label>
+    <input type="email" required  value={val.email} onChange={handlevalue} className="form-control" placeholder="Enter email"/>
+    </div>
+    <div className="form-group m-3">
+    <label>Contact</label>
+    <input type="tel" required   pattern="[0-9]{10}" value={val.phone} onChange={handlevalue} className="form-control" placeholder="Enter phone no."/>
+    </div>
+
+    </form>
       </>
     )
   }
@@ -11,30 +25,3 @@ function Loginform  ()  {
 
 
 
-//   import { useState } from 'react';
-// import ReactDOM from 'react-dom/client';
-
-// function MyForm() {
-//   const [name, setName] = useState("");
-
-//   const handleSubmit = (event) => {
-//     event.preventDefault();
-//     alert(`The name you entered was: ${name}`)
-//   }
-
-//   return (
-//     <form onSubmit={handleSubmit}>
-//       <label>Enter your name:
-//         <input 
-//           type="text" 
-//           value={name}
-//           onChange={(e) => setName(e.target.value)}
-//         />
-//       </label>
-//       <input type="submit" />
-//     </form>
-//   )
-// }
-
-// const root = ReactDOM.createRoot(document.getElementById('root'));
-// root.render(<MyForm />);

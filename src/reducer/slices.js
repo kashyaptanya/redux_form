@@ -9,7 +9,7 @@ const counterSlice = createSlice({
      state.users = ""
      state.users = action.payload;
      state.isLoading = false;
-   },
+     },
    email: (state) => {
      state.users = ""
      state.users = action.payload;
@@ -19,8 +19,7 @@ const counterSlice = createSlice({
     state.users = ""
     state.users = action.payload;
     state.isLoading = false;
-   }
-  
+   } 
  },
 })
 

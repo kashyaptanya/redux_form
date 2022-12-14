@@ -2,7 +2,7 @@ import {combineReducers} from "redux"
 import counterSlice from "./slices";
 
 const rootReducr =combineReducers({
-    counter : counterSlice
+    users : counterSlice
 })
 export default rootReducr;
 
